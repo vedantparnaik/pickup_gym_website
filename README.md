@@ -13,13 +13,13 @@ Community-focused experience where fitness is made social
 Below are some screenshots showcasing the key features of the app.
 
 ![Landing Page](https://github.com/vedantparnaik/pickup_gym_website/blob/main/pictures/Landing%20Page.png)
-*Description: The landing page showcasing the gym's features and the 'Find a Session' button.*
+### *Description: The landing page showcasing the gym's features and the 'Find a Session' button.*
 
 ![Schedule Page](https://github.com/vedantparnaik/pickup_gym_website/blob/main/pictures/Schedule%20Page.png)
-*Description: The gym schedule page with available sessions and booking options.*
+### *Description: The gym schedule page with available sessions and booking options.*
 
 ![Admin Page](https://github.com/vedantparnaik/pickup_gym_website/blob/main/pictures/Admin%20Page.png)
-*Description: Admin panel for adding new gym sessions.*
+### *Description: Admin panel for adding new gym sessions.*
 
 ## Technologies Used
 
