@@ -12,12 +12,14 @@ Community-focused experience where fitness is made social
 ## Screenshots
 Below are some screenshots showcasing the key features of the app.
 
+![Landing Page](https://github.com/vedantparnaik/pickup_gym_website/blob/main/pictures/Landing%20Page.png)
+*Description: The landing page showcasing the gym's features and the 'Find a Session' button.*
+
+![Schedule Page](https://github.com/vedantparnaik/pickup_gym_website/blob/main/pictures/Schedule%20Page.png)
+*Description: The gym schedule page with available sessions and booking options.*
+
 ![Admin Page](https://github.com/vedantparnaik/pickup_gym_website/blob/main/pictures/Admin%20Page.png)
 *Description: Admin panel for adding new gym sessions.*
-
-Description: Admin panel for adding new gym sessions.
-
-Description: The gym schedule page with available sessions and booking option.
 
 ## Technologies Used
 
@@ -25,3 +27,9 @@ Frontend: HTML, CSS, Bootstrap 5
 Backend: Python (Flask)
 Database: SQLite
 Version Control: Git & GitHub
+
+## Contributing
+If you'd like to contribute to this project, feel free to fork the repository and create a pull request with your changes. Make sure to follow the coding style and add appropriate comments and documentation where needed.
+
+## License
+This project is licensed under the MIT License - see the LICENSE file for details.
