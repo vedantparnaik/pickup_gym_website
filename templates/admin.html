@@ -1,0 +1,17 @@
+<h1>Admin Panel</h1>
+<table border="1">
+    <tr>
+        <th>Time Slot</th>
+        <th>Availability</th>
+        <th>Action</th>
+    </tr>
+    {% for time_slot, availability, id in schedule %}
+    <tr>
+        <td>{{ time_slot }}</td>
+        <td>{{ availability }}</td>
+        <td>
+            <a href="/edit_slot/{{ id }}">Edit</a>
+        </td>
+    </tr>
+    {% endfor %}
+</table>

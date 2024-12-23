@@ -1,0 +1,9 @@
+<h1>Edit Slot</h1>
+<form action="" method="POST">
+    <label for="availability">Availability:</label>
+    <select name="availability">
+        <option value="Available" {% if slot[2] == 'Available' %}selected{% endif %}>Available</option>
+        <option value="Full" {% if slot[2] == 'Full' %}selected{% endif %}>Full</option>
+    </select>
+    <button type="submit">Update</button>
+</form>
