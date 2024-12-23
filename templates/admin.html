@@ -1,17 +1,25 @@
-<h1>Admin Panel</h1>
-<table border="1">
-    <tr>
-        <th>Time Slot</th>
-        <th>Availability</th>
-        <th>Action</th>
-    </tr>
-    {% for time_slot, availability, id in schedule %}
-    <tr>
-        <td>{{ time_slot }}</td>
-        <td>{{ availability }}</td>
-        <td>
-            <a href="/edit_slot/{{ id }}">Edit</a>
-        </td>
-    </tr>
-    {% endfor %}
-</table>
+{% extends "base.html" %}
+
+{% block title %}Admin - Pickup Gym{% endblock %}
+
+{% block content %}
+<div class="container my-5">
+  <h1>Admin Panel</h1>
+  <p>Manage gym schedules and user bookings here.</p>
+  <form action="/admin/add_session" method="post" class="my-4">
+    <div class="mb-3">
+      <label for="session_name" class="form-label">Session Name</label>
+      <input type="text" class="form-control" id="session_name" name="session_name" required>
+    </div>
+    <div class="mb-3">
+      <label for="time" class="form-label">Time</label>
+      <input type="text" class="form-control" id="time" name="time" required>
+    </div>
+    <div class="mb-3">
+      <label for="slots" class="form-label">Available Slots</label>
+      <input type="number" class="form-control" id="slots" name="slots" required>
+    </div>
+    <button type="submit" class="btn btn-success">Add Session</button>
+  </form>
+</div>
+{% endblock %}

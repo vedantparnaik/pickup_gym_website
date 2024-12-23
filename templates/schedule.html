@@ -1,40 +1,31 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gym Schedule</title>
-</head>
-<body>
-    <h1>Gym Schedule</h1>
-    <table border="1">
-        <tr>
-            <th>Time Slot</th>
-            <th>Availability</th>
-        </tr>
-        {% for time_slot, availability in schedule %}
-        <tr>
-            <td>{{ time_slot }}</td>
-            <td>{{ availability }}</td>
-        </tr>
+{% extends "base.html" %}
 
-        <tr>
-            <td>{{ time_slot }}</td>
-            <td>{{ availability }}</td>
-            {% if availability == 'Available' %}
-            <td>
-                <form action="/book_slot" method="POST">
-                    <input type="hidden" name="time_slot" value="{{ time_slot }}">
-                    <button type="submit">Book</button>
-                </form>
-            </td>
-            {% else %}
-            <td>Full</td>
-            {% endif %}
-        </tr>
-        
-        {% endfor %}
-    </table>
-    <p><a href="/">Back to Home</a></p>
-</body>
-</html>
+{% block title %}Schedule - Pickup Gym{% endblock %}
+
+{% block content %}
+<div class="container my-5">
+  <h1>Gym Schedule</h1>
+  <table class="table table-striped">
+    <thead>
+      <tr>
+        <th>Time</th>
+        <th>Session</th>
+        <th>Availability</th>
+        <th>Action</th>
+      </tr>
+    </thead>
+    <tbody>
+      {% for session in sessions %}
+      <tr>
+        <td>{{ session.time }}</td>
+        <td>{{ session.name }}</td>
+        <td>{{ session.slots }} Slots Available</td>
+        <td>
+          <a href="/book?session={{ session.name }}" class="btn btn-primary">Book Now</a>
+        </td>
+      </tr>
+      {% endfor %}
+    </tbody>
+  </table>
+</div>
+{% endblock %}

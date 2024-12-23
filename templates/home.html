@@ -1,14 +1,17 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pickup Gym</title>
-</head>
-<body>
-    <h1>Welcome to the Pickup Gym Website!</h1>
-    <p>Find your gym schedule and book your slot easily.</p>
-    <p><a href="/schedule">View Gym Schedule</a></p>
+{% extends "base.html" %}
 
-</body>
-</html>
+{% block title %}Home - Pickup Gym{% endblock %}
+
+{% block content %}
+<div class="hero">
+  <h1>Welcome to Pickup Gym</h1>
+  <p>Your ultimate destination to find gym buddies and fitness events.</p>
+  <a href="/schedule" class="btn btn-primary btn-lg">View Schedule</a>
+</div>
+<div class="container my-5">
+  <h2>About Us</h2>
+  <p>At Pickup Gym, we believe that fitness is not just about lifting weights—it's about building connections and creating a community. Whether you're looking for a workout buddy, want to try a new fitness class, or simply need motivation, our platform brings people together to make fitness a shared experience.
+
+    We offer a variety of workout sessions led by experienced trainers, where everyone, from beginners to pros, can find a fit for their fitness journey. Join us today and discover how we make fitness fun, social, and achievable!</p>
+</div>
+{% endblock %}
