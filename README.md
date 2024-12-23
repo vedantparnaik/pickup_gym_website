@@ -12,7 +12,8 @@ Community-focused experience where fitness is made social
 ## Screenshots
 Below are some screenshots showcasing the key features of the app.
 
-Description: The homepage showcasing a welcoming message and a button to view gym schedules.
+![Admin Page](https://github.com/vedantparnaik/pickup_gym_website/blob/main/pictures/Admin%20Page.png)
+*Description: Admin panel for adding new gym sessions.*
 
 Description: Admin panel for adding new gym sessions.
 
